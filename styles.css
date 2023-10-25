@@ -1,0 +1,230 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+   padding: 0;
+   width: 100%;
+   color: #686060;
+}
+:root{
+    --hoverTextColor:rgb(98, 38, 81);
+    --textColor:rgb(85, 33, 70);
+}
+/* header section */
+.header{
+    height: 70px;
+    outline: 1px solid rgb(153, 146, 146);
+    padding: 0px 70px;
+    display: flex;
+     align-items: center;
+}
+.logo img{
+    width: 200px;
+}
+/* search bar */
+.searchbar img{ 
+    width:20px;
+    margin-left: 10px;
+
+}
+.searchcontainer{
+    border: 1px solid rgb(122, 99, 99);
+    border-radius: 3px;
+}
+.searchbar1 input{
+   margin-top: 1px;
+   width: 340px;height: 30px;
+   border: none;
+   outline: none;
+}
+.searchcontainer{
+    outline: 1px solid #ccc;
+    max-width: 440px;
+    display: flex;
+    align-items: center;
+}
+form{
+    width: 100%;
+}
+.searchRecentModal{
+    position: absolute;
+    bottom: 0;
+    left: 280px;
+    top: 53px;
+    height: 400px;
+    width: 365px;
+    display: none;
+    background-color: white;
+}
+.searchcontainer:focus-within .searchRecentModal{
+    display: block;
+}
+.recentItem{
+    display: flex;
+    align-items: center;
+    background-color: white;
+}
+
+.recentitem, button{
+    width: 80px;height: 40px;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: rgb(227, 230, 233);
+}
+/* right */
+.mobileIcon{
+    width: 15px;
+    margin-right:  25px;
+    margin-left: 40px;
+   
+} 
+.downloadContainer{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding-right: 20px;
+    position: relative;margin-left: 50px;
+}
+.downloadContainer p{
+    margin-right: 130px;
+}
+.downloadContainer:hover{
+    color:var(--hoverTextColor);
+    cursor: pointer;
+}
+.downloadBtn img{
+    width: 140px;
+}
+.downloadBtn{
+    display: block;
+    width: 140px;
+    margin-top: 5px;
+}
+
+ .becomeSupplierContainer{
+    padding: 0px 40px;
+    border-left: 1.5px solid #ccc;
+    border-Right: 1.5px solid #ccc;
+    font-size: 17px;
+}
+
+.downloadHoverBtnContainer{
+    position: absolute;
+    bottom: 0;
+    top:40px;
+    /* box-shadow: 0px 0px 5px rgba(0,0,0,0.3); */
+    width: 200px;
+    /* background-color: red; */
+    display: none;
+    height: 200px;
+    padding: 10px;
+    margin-left: -30px;
+    color:var(--textColor);
+    background: white;
+    z-index: 2;
+}
+.downloadContainer:hover .downloadHoverBtnContainer,
+.downloadContainer:focus .downloadHoverBtnContainer{
+    display: block;
+}
+.downloadContainer p{
+    margin:0;
+    padding: 0;
+    font-size: 17px;
+}
+.profileAndCart{
+    display: flex;
+    align-items: center;
+    
+}
+.profileAndCart:hover,
+.profileAndCart:focus{
+    color: var(--hoverTextColor);
+}
+
+.profileIcon,
+.CartIcon{
+    width: 20px;
+}
+.profileAndCart p{
+    margin:0;
+    padding: 0;
+
+}
+.profileContainer,
+.CartContainer{
+    padding: 0px 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+nav{
+    width: 100%;
+    border-bottom: 2px solid #ccc;
+    height: 50px;}
+ nav ul {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0px 10px;
+    margin: 0;
+    padding: 0;
+    height: 100%;position: relative;
+}
+nav ul li{
+    height: 100%;
+    display:flex; 
+    align-items: center;
+    margin-right: 40px;
+    margin-left: 20px;
+    cursor: pointer;position: relative;
+} 
+nav ul li:hover{
+    color:var(--hoverTextColor);
+    border-bottom: 2px solid var(--hoverTextColor);
+}
+/* .submenu{
+    position: absolute;
+    width: 80%;
+    height: 300px;
+    border: 1px solid black;
+    top: 118px;
+} */
+.subMenu{
+    position: absolute;
+    height: 400px;  width: 100%;
+    top:51px;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border: 1px solid black;
+    box-sizing: border-box;
+    display: none;
+    margin: 0px 10px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+    padding: 20px;
+}
+
+nav ul li:hover .subMenu{
+    display: block;
+}
+
+.subMenu p{
+    color:var(--textColor)
+
+}
+.submenuList{
+    display: flex;
+    padding-right: 20px;
+}
+.column{
+    margin-right: 40px;
+}
+
+
+
+ 
+
