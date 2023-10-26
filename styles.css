@@ -10,7 +10,7 @@ body{
 }
 :root{
     --hoverTextColor:rgb(98, 38, 81);
-    --textColor:rgb(85, 33, 70);
+    --textColor:rgb(159, 32, 137);
 }
 /* header section */
 .header{
@@ -160,71 +160,116 @@ form{
     align-items: center;
     flex-direction: column;
 }
-nav{
+ nav{
     width: 100%;
     border-bottom: 2px solid #ccc;
-    height: 50px;}
+    height: 50px; 
+}
  nav ul {
     display:flex;
-    align-items: center;
     justify-content: space-between;
     list-style-type: none;
     padding: 0px 10px;
-    margin: 0;
     padding: 0;
-    height: 100%;position: relative;
+    height: 100%;
+    position: relative;
 }
 nav ul li{
     height: 100%;
-    display:flex; 
+    display:flex;
     align-items: center;
-    margin-right: 40px;
-    margin-left: 20px;
-    cursor: pointer;position: relative;
+    cursor: pointer;
 } 
 nav ul li:hover{
     color:var(--hoverTextColor);
-    border-bottom: 2px solid var(--hoverTextColor);
+    border-bottom: 3px solid var(--hoverTextColor);
 }
-/* .submenu{
-    position: absolute;
-    width: 80%;
-    height: 300px;
-    border: 1px solid black;
-    top: 118px;
-} */
 .subMenu{
     position: absolute;
-    height: 400px;  width: 100%;
-    top:51px;
-    left: 0;
-    right: 0;
+    width: 150vh;
+    height: 400px;
     background-color: white;
-    border: 1px solid black;
+    top: 50px;left: 0;right:0;
+    margin-left: 10px;
+    border: 1px solid #ccc;
     box-sizing: border-box;
+    padding: 0px 10px;
     display: none;
-    margin: 0px 10px;
-    box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
-    padding: 20px;
+    padding:20px;
 }
-
 nav ul li:hover .subMenu{
     display: block;
 }
-
 .subMenu p{
     color:var(--textColor)
-
 }
 .submenuList{
     display: flex;
-    padding-right: 20px;
 }
 .column{
     margin-right: 40px;
 }
+/* main content */
+.lowestpriceContainer{
+    display: flex;
+    margin:50px auto;
+    max-width: 1100px;
+    font-family:"Mier bold";
+    background-color: rgb(248, 248, 255);;
+}
+.lowestpriceContainer h1{
+    font-size: 40px;
+    margin: 0;
+    color:rgb(36, 31, 31);
+}
+.lowestPrice_text{
+    width: 50%;
+    padding: 25px 0 0 25px;
+}
+.lowestPrice_image{
+    width: 50%;
+}
+.lowestPrice_icon{
+    width: 30px;
+    border-radius: 40px;
+    background-color: rgb(121, 22, 98);   
+}
+.lowestPriceWhay{
+    display: flex;
+    height: 50px;
+    margin: 20px 0;
+}
+.lowestPriceItem{
+    padding:  0 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-right: 2px solid #ccc;
+}
+.lowestPriceItem p{
+    padding-left: 10px;
+}
+.downloadApp_contianer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 20px;
+    height: 50px;
+    background-color: var(--hoverTextColor);
+    border:none;
+    outline: none;
+    padding: 0 130px;
+    border-radius: 5px;
+    color:white;
+}
+.downloadApp_contianer img{
+    right: 40px;
+}
+.downloadApp_contianer p{
+    padding: 0px 20px;
+}
 
 
 
- 
+
 
