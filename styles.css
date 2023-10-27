@@ -268,8 +268,101 @@ nav ul li:hover .subMenu{
 .downloadApp_contianer p{
     padding: 0px 20px;
 }
+/*  */
+.topCategoriesFrom{
+    width: 1100px;
+    margin: auto;
+}
+.topCategoriesHeading{
+    display: flex;
+    align-items: center;
+    
+}
+.horizontalLine{
+    padding: 1px;
+    background-color: var(--hoverTextColor);
+    width:50%;
+    
+}
+.topCategoriesHeading h1{   
+    width: max-content;
+    width: 1050px;
+    color:rgb(8, 8, 8);
+    font-size: 38px;
+    margin: 0;
+}
+.topCategoreisImage{
+    width: 100%;
+    height: 500px;
+    background-image: url("./img/backgroundimage.webp");
+    background-repeat: no-repeat;
+    margin-top: 50px;
+    display: flex;
+    align-items: flex-end;
+}
+.topCategoreisImage img{
+    max-width: 300px;
+    margin: 10px;
+    bottom: 0;
+}
+.topCategoreisImage img:first-child{
+    max-width: 400px;
+}
+/* essentials */
+.essentials{
+    background-image: url('./img/essentials.webp');
+    background-repeat: no-repeat;
+    margin-left: 200px;
+    margin-top: 75px;
+    display: flex;
+}
+.essentialhead img{
+    margin-top: 250px;
+    margin-left: 90px;
+}
+.cards{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+    
+}
+.card1{
+    margin-left: 100px;
+    margin-right: 30px;   
+}
+.card2{
+    margin-right: 30px;   
+}
+.women{
+    background-image: url('./img/womenimg.webp');
+    background-repeat: no-repeat;
+   
+    width: 1600px;
+    height: 700px;
+    margin-left: 200px;
+    margin-top: 75px;
+}
+.btn img{
+    width: 170px;
+    height: 35px;
+    margin-top: 140px;
+    margin-left: 40px;
 
-
-
-
-
+}
+.btn img:nth-child(1){
+    margin-left: 560px;
+}
+.h h1,h2{
+   margin-left: 700px;
+   margin-top: 50px;
+}
+.h h2{
+    color: rgb(85, 133, 248);
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 40px;
+    font-family: "Mier book";
+}
+.h h1{
+    color: darkmagenta;
+}
